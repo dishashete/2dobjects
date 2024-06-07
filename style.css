@@ -1,0 +1,97 @@
+/* Custom CSS for canvas and sidebar */
+/*#sidebars {
+    position: absolute;
+    left:50px;
+    top: 20px; 
+    width: 250px;
+    height: 1000px; 
+    background-color: #FEFFD2;
+    border: 2px solid #FF7D29; 
+    box-sizing: border-box; 
+    z-index: 0; 
+}*/
+
+.canvas-container {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Offset by 50% of its size to truly center */
+    width: 80%; /* Adjust width to fit remaining space */
+    height: 80%; /* Adjust height to fit remaining space */
+    z-index: 0;
+}
+
+#canvas-container-inner {
+    width: 100%; /* Use full width of the container */
+    height: 100%; /* Use full height of the container */
+}
+
+canvas {
+    width: 100%; /* Use full width of the container */
+    height: 100%; /* Use full height of the container */
+    border: 3px solid #FF7D29; /* Add thick black border */
+    box-sizing: border-box; /* Include border thickness in element's total width and height */
+    z-index: 0; /* Ensure canvas appears behind sidebar */
+}
+
+
+#zoom-controls {
+    position: absolute;
+    top: 25px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 2; /* Ensure zoom controls appear above canvas and sidebar */
+}
+#colorSlider{
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 2; /* Ensure zoom controls appear above canvas and sidebar */
+
+}
+
+#colorSlider2{
+    position: absolute;
+    top: 90px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 2; /* Ensure zoom controls appear above canvas and sidebar */
+
+}
+#zoom-controls svg {
+    cursor: pointer;
+    margin: 5px; /* Add space between zoom in and zoom out buttons */
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevent scrolling */
+}
+.navbar {
+    background-color: #FF7D29 !important; /* Set the navbar background color */
+}
+
+.navbar-brand, .nav-link, .navbar-toggler-icon {
+    color: white !important; /* Change text and icon color to white for contrast */
+}
+
+.nav-link {
+    margin-right: 10px; /* Add some spacing between nav links */
+}
+
+.navbar-toggler {
+    border-color: white !important; /* Change the border color of the toggler to white */
+}
+
+.form-control {
+    margin-right: 5px; /* Add some spacing between the search input and the button */
+}
+
+.btn-outline-success {
+    color: white !important; /* Change button text color to white */
+    border-color: white !important; /* Change button border color to white */
+}
+
+.btn-outline-success:hover {
+    background-color: white !important; /* Change button background color on hover */
+    color: #FF7D29 !important; /* Change button text color on hover */
+}
